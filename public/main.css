@@ -1,0 +1,7 @@
+#moviesTable tr:hover {
+    cursor: pointer;
+}
+
+.d-flex button {
+    margin-left: 5px;
+}

@@ -111,7 +111,6 @@ function loadMovieData(title = null) {
 
 document.addEventListener('DOMContentLoaded', function () {
     loadMovieData();
-    // populatePostsTable(4); // test with User ID 4 (to be removed after testing)
 
     document.querySelector('.pagination #pre-page').addEventListener('click', () => {
         if (page > 1) {

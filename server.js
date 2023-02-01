@@ -21,7 +21,6 @@ app.use(cors())
 const HTTP_PORT = process.env.PORT
 
 const MoviesDB = require("./moviesDB.js");
-const { Http2ServerRequest } = require('http2')
 const db = new MoviesDB();
 
 app.use(express.static('./public'))

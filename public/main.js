@@ -79,14 +79,8 @@ function loadMovieData(title = null) {
                             document.querySelector('#detailsModal .modal-header .modal-title').innerHTML = data.title;
                             
                             let movieData = `
-                            <img class="img-fluid w-100" src=${data.poster} alt=""/>${(() => {
-                                if (data.poster) {
-                                    `<br><br>`
-                                }
-                                else {
-                                    return ""
-                                }
-                            })()}
+                            <img class="img-fluid w-100" src=${data.poster} alt=""/>
+                            <br><br>
                             <strong>Directed By:</strong> ${data.directors.join()}<br><br>
                             <p>${data.fullplot}</p>
                             <strong>Cast:</strong>${(() => {
